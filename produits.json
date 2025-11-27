@@ -242,9 +242,9 @@
     "nom": "Balade d'Ayakashi",
     "prix": "90€",
     "description":"L’Ayakashi est une créature du folklore japonais qui provien des marins mort en pleinne mer. Lorsqu’il vous attaque le seule moyen de l’apaiser est de jeter des cendres a la mers. Il a pour maitre Ryujin le kami (dieux) de la mer.",
-    "image2": "ayakashi/ip/ayakashi.jpg",
-    "image3": "ayakashi/ip/zoom1.jpg",
-    "image4": "ayakashi/ip/zoom2.jpg",
+    "image2": "ayakashi/og/ayakashi.jpg",
+    "image3": "ayakashi/og/zoom1.jpg",
+    "image4": "ayakashi/og/zoom2.jpg",
     "technique": "Feutre de précision, de couleur et aquarelle ",
     "format": "  A3",
     "nature": "Original"
@@ -255,9 +255,9 @@
     "nom": "La Balade d'Ayakashi",
     "prix": "25€",
     "description":"L’Ayakashi est une créature du folklore japonais qui provien des marins mort en pleinne mer. Lorsqu’il vous attaque le seule moyen de l’apaiser est de jeter des cendres a la mers. Il a pour maitre Ryujin le kami (dieux) de la mer.",
-    "image2": "ayakashi/og/ayakashi.jpg",
-    "image3": "/ayakashi/og/zoom1.jpg",
-    "image4": "ayakashi/og/zoom2.jpg",
+    "image2": "ayakashi/ip/ayakashi.jpg",
+    "image3": "/ayakashi/ip/zoom1.jpg",
+    "image4": "ayakashi/ip/zoom2.jpg",
     "technique": "Feutre de précision, de couleur et aquarelle ",
     "format": "  A3",
     "nature": "Impression"
@@ -657,4 +657,5 @@
 
 
 ]   
+
 
