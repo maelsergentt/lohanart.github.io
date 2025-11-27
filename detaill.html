@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+
+    <header class="header-outer">
+
+    <div class="header-inner responsive-wrapper">
+      <div class="header-logo">
+        <a href="index.html"><img src="logosvg blanc.svg" /></a>
+      </div>
+      <nav class="header-navigation">
+            <button class="menu-button">
+              <svg class="burger-icon" viewBox="0 0 100 80" width="30" height="30">
+                  <rect class="burger-line top" width="100" height="10" rx="5"></rect>
+                  <rect class="burger-line middle" y="30" width="100" height="10" rx="5"></rect>
+                  <rect class="burger-line bottom" y="60" width="100" height="10" rx="5"></rect>
+              </svg>
+            </button>
+            <div class="nav-links">
+               <a href="index.html">Home</a>
+                <a href="#">Ryukin</a>
+                <a href="#">Mythes</a>
+                <a href="#">Fleurs</a>
+                <a href="propos.html">À propos</a>
+            </div>
+      </nav>
+    </div>
+
+  </header>
+  <div id="produit-detail"></div>
+
+  
+
+ 
+
+
+  <script>
+    // Récupère l'ID du produit depuis l'URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const produitId = urlParams.get('id');
+
+  // Charge les données du produit
+  fetch('produits.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Erreur de chargement du fichier JSON.");
+      }
+      return response.json();
+    })
+    .then(produits => {
+      const produit = produits.find(p => p.id == produitId);
+      if (!produit) {
+        document.getElementById('produit-detail').innerHTML = "<p>Produit non trouvé.</p>";
+        return;
+      }
+
+      // Génère dynamiquement les balises <img> pour image2 à image7, seulement si elles existent
+      let imagesHTML = '';
+      for (let i = 2; i <= 7; i++) {
+        const imageKey = `image${i}`;
+        if (produit[imageKey]) {
+          imagesHTML += `<img src="${produit[imageKey]}" alt="${produit.nom}">`;
+        }
+      }
+
+      // Si aucune image supplémentaire n'est disponible
+      if (imagesHTML === '') {
+        imagesHTML = '<p>Aucune image supplémentaire disponible.</p>';
+      }
+
+      // Construit le HTML final
+      document.getElementById('produit-detail').innerHTML = `
+        <div class="product-page">
+          <!-- Conteneur pour les images -->
+          <div class="product-images">
+            <div class="image-container">
+              ${imagesHTML}
+            </div>
+          </div>
+          <!-- Conteneur pour le texte -->
+          <div class="product-info">
+            <h1>${produit.nom || "Nom non disponible"}</h1>
+            <div class="product-price">${produit.prix || "Prix non disponible"}</div>
+            <div class="product-description">
+              <p>${produit.description || "Aucune description disponible."}</p>
+            </div>
+            <button class="product-button">contacter</button>
+            <div class="product-details">
+              <h3>Détails de l'Illustration</h3>
+              <ul>
+                <li>Technique: digital</li>
+                <li>Impression A4</li>
+              </ul>
+            </div>
+            <div class="original">
+              ${produit.soustitre ? `<h3>${produit.soustitre}</h3>` : ''}
+              ${produit.imagecollection ? `<img class="collection" src="${produit.imagecollection}" alt="">` : ''}
+            </div>
+          </div>
+        </div>
+      `;
+    })
+    .catch(error => {
+      console.error("Erreur :", error);
+      document.getElementById('produit-detail').innerHTML = `<p>Erreur de chargement des données : ${error.message}</p>`;
+    });
+
+
+
+      document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.menu-button');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('menu-open');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const imageContainer = document.querySelector('.image-container');
+    const prevButton = document.getElementById('prevImage');
+    const nextButton = document.getElementById('nextImage');
+    const images = document.querySelectorAll('.product-images img');
+    let currentIndex = 0;
+
+    // Fonction pour naviguer entre les images
+    function scrollToImage(index) {
+        if (window.innerWidth <= 768) {
+            // Mobile : défilement horizontal
+            imageContainer.scrollTo({
+                left: imageContainer.clientWidth * index,
+                behavior: 'smooth'
+            });
+        }
+        currentIndex = index;
+    }
+
+    // Bouton précédent
+    prevButton.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            scrollToImage(currentIndex - 1);
+        }
+    });
+
+    // Bouton suivant
+    nextButton.addEventListener('click', function() {
+        if (currentIndex < images.length - 1) {
+            scrollToImage(currentIndex + 1);
+        }
+    });
+
+    // Défilement tactile sur mobile
+    if (window.innerWidth <= 768) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        imageContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - imageContainer.offsetLeft;
+            scrollLeft = imageContainer.scrollLeft;
+        });
+
+        imageContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+
+        imageContainer.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+
+        imageContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - imageContainer.offsetLeft;
+            const walk = (x - startX) * 2;
+            imageContainer.scrollLeft = scrollLeft - walk;
+        });
+    }
+});
+
+  // Récupère l'URL de la page actuelle
+const currentPage = window.location.pathname.split("/").pop();
+
+// Sélectionne tous les liens du menu
+const navLinks = document.querySelectorAll('nav a');
+
+// Pour chaque lien, vérifie s'il correspond à la page actuelle
+navLinks.forEach(link => {
+  const linkPage = link.getAttribute('href');
+  if (currentPage === linkPage) {
+    link.classList.add('active');
+  }
+});
+
+  </script>
+
+   <div class="footer-basic">
+     <hr class="footer-divider">
+        <footer>
+                <div class="logofooter">
+                    <img  src="logo.svg" alt=""> 
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/lohaaaaaaan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="icon-social-instagram"><img class="logoinsta"  src="insta.svg" alt=""></i></a>
+                    <a href="https://www.etsy.com/shop/lohanart/?etsrc=sdt&fbclid=PAZXh0bgNhZW0CMTEAAadfAHP0Sed6VqE4BsTyQRktA5NwKiCvqk_i2_V80Je5dEqkaL-fYW_1D8UX2Q_aem_WmE3oS4txR3PLXIGs1Iv7g&dd_referrer=https%3A%2F%2Fl.instagram.com%2F"><i class="icon-social-instagram"><img class="logoinsta"  src="etsy.svg" alt=""></i></a>
+                </div>
+                <div class="copyright">
+                    <p >Mentions Légales</p>    
+                    <p >Lohan Illustrateur | Tous droits réservés</p>
+                </div>
+           
+        </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+         fetch('produits.json')
+      .then(response => response.json())
+      .then(produits => {
+        const produit = produits.find(p => p.id == produitId);
+        if (produit) {
+            if (produit.image) {
+             html += `<img src="${produit.image}" alt="${produit.nom}">`;
+            }
+          document.getElementById('produit-detail').innerHTML = `
+
+    <div class="product-page">
+    
+    <div class="product-images">
+        <div class="image-container">
+             <img src="${produit.image2}" alt="${produit.nom}">
+        </div>
+        <div class="image-container">
+             <img src="${produit.image3}" alt="${produit.nom}">
+        </div>
+        <div class="image-container">
+             <img src="${produit.image4}" alt="${produit.nom}">
+        </div>
+        <div class="image-container">
+             <img src="${produit.image5}" alt="${produit.nom}">
+        </div>
+        <div class="image-container">
+             <img src="${produit.image6}" alt="${produit.nom}">
+        </div>
+        <div class="image-container">
+             <img src="${produit.image7}" alt="${produit.nom}">
+        </div>
+    </div>
+       
+    
+
+    <!-- Conteneur pour le texte (fixe sur desktop) -->
+    <div class="product-info">
+        <h1>${produit.nom}</h1>
+        <div class="product-price">${produit.prix}</div>
+        <div class="product-description">
+            <p>${produit.description}</p>
+        </div>
+        <button class="product-button">contacter</button>
+        <div class="product-details">
+            <h3>Détails de l'Illustration</h3>
+            <ul>
+                <li>Technique: digital</li>
+                <li>Impression A4</li>
+            </ul>
+        </div>
+        <div class="original">
+            <h3>${produit.soustitre}</h3>
+            <img class="collection" src="${produit.imagecollection}" alt="">
+        </div>
+
+    </div>
+</div>
+          `;
+        }
+      });
+    </script>
+
+
+</body>
+</html>

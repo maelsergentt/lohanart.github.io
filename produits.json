@@ -1,0 +1,659 @@
+[
+  {
+    "id": 1,
+    "nom": "Le Courroux d'Akkorokamui",
+    "description": "Cette créature vit dans le nord du Japon. Elle terrifie les pêcheurs et engloutit les navires qui l'approchent de trop près. On raconte qu'il protège les régions du nord. L'Akkorokamui proviens du folklore Ainu ou il serait un kami (dieux) de l'eau.",
+    "prix": "45€",
+    "image2": "imgdetail/akkorokamui/sanscadre.jpg",
+    "image3": "imgdetail/akkorokamui/zoom1.jpg", 
+    "image4": "imgdetail/akkorokamui/zoom2.jpg",
+    "image5": "imgdetail/akkorokamui/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+
+  },
+
+  {
+    "id": 2,
+    "nom": "La danse du Fujin",
+    "description": "Fujin est le kami (dieux) du vent, il provient de ... le kami . Fujin a l'apparence d'un Oni (démon) avec un sac dans lequel serais gardé les vents de ce monde On dis que lorsque Fujin apparais son frère jumeaux Raijin n'est pas loin.",
+    "prix": "45€",
+    "image2": "imgdetail/fujin/dansefujin.jpg",
+    "image3": "imgdetail/fujin/zoom1.jpg",
+    "image4": "imgdetail/fujin/zoom2.jpg",
+    "image5": "imgdetail/fujin/zoom3.jpg",
+    "image6": "imgdetail/fujin/zoom4.jpg",
+    "image7": "imgdetail/fujin/zoom5.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+  
+  {
+    "id": 3,
+    "nom": "La danse du Raijin",
+    "description": "Fujin est le kami (dieux) du vent, il provient de ... le kami . Fujin a l'apparence d'un Oni (démon) avec un sac dans lequel serais gardé les vents de ce monde On dis que lorsque Fujin apparais son frère jumeaux Raijin n'est pas loin.",
+    "prix": "45€",
+    "image2": "imgdetail/raijin/danseraijin.jpg",
+    "image3": "imgdetail/raijin/zoom1.jpg",
+    "image4": "imgdetail/raijin/zoom2.jpg",
+    "image5": "imgdetail/raijin/zoom3.jpg",
+    "image6": "imgdetail/raijin/zoom4.jpg",
+    "image7": "imgdetail/raijin/zoom5.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 4,
+    "nom": "Le Samourai contre Tengu",
+    "description": "Le Tengu est un personnage iconique du folklore japonais, descendant du kami (dieux) Amanozako Hime. Il serait des incarnations de la colère sur terre. Sojobo est le seigneur des Tengu et le maître d’armes Minamoto no Yoshitsune, l’un des personnages fondateurs du Japon.",
+    "prix": "45€",
+    "image2": "imgdetail/samourai/samourai.jpg",
+    "image3": "imgdetail/raijin/zoom1.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 5,
+    "nom": "La légende de Shisa",
+    "description": "Cousin du Komainu (lion gardien), ils protègent des forces maléfiques, les lieux religieux et les maisons. On voit surtout des représentations sur les toits des maisons traditionnelles d'Okinawa.",
+    "prix": "180€",
+    "image2": "imgdetail/shisa/shisa.jpg",
+    "image3": "imgdetail/shisa/zoom.jpg",
+     "image4": "imgdetail/shisa/zoom1.jpg",
+     "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+    
+  },
+
+  {
+    "id": 6,
+    "nom": "La lumière d'Aosaginohi",
+    "description": "L’Aosaginohi est un esprit du folklore japonais on dit qu’il perçois qui est bon et qui est mauvais. Il vous aidera ou vous desservira selon son choix. ",
+    "prix": "45€",
+    "image2": "imgdetail/aosaginohi/aosaginohi.jpg",
+    "image3": "imgdetail/aosaginohi/zoom1.jpg",
+     "image4": "imgdetail/aosaginohi/zoom2.jpg",
+     "image5": "imgdetail/aosaginohi/zoom3.jpg",
+     "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 7,
+    "nom": "Isonade dans la tempête",
+    "description": "Isonade est une créature marine de l'Ouest du Japon. Quand il apparaît, une forte tempête se déclenche et s'attaque aux marins. Il les pousse dans l'eau grâce à sa queue ou fait chavirer le navire. On le reconnaît à son hameçon coincé dans sa queue. Personne ne l'a jamais vue en entier. ",
+    "prix": "25€",
+    "image2": "imgdetail/isonade/isonade.jpg",
+    "image3": "imgdetail/isonade/zoom1.jpg",
+     "image4": "imgdetail/isonade/zoom2.jpg",
+     "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 8,
+    "nom": "Grue",
+     "description":"",
+    "prix": "25€",
+    "image2": "imgdetail/grue/grue.jpg",
+    "image3": "imgdetail/grue/zoom1.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 9,
+    "nom": "La nuit de l'Ame Onna",
+    "prix": "85€",
+    "image2": "imgdetail/onna/onna.jpg",
+    "image3": "imgdetail/onna/zoom1.jpg",
+    "image4": "imgdetail/onna/zoom2.jpg",
+    "image5": "imgdetail/onna/zoom3.jpg",
+    "image6": "imgdetail/onna/zoom4.jpg",
+    "image7": "imgdetail/onna/zoom5.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 10,
+    "nom": "La Veillée de Kaifukibo",
+    "prix": "85€",
+    "description":"Kaifukibô est l’esprit d’un moine trahi par son seigneur. Il hante le domaine familial pour se venger, il souffle dans des coquillages afin de provoquer malheur et maladie sur le domaine. Durant sa vie d’humain, il priait pour que son seigneur obtienne un descendant ; en échange, il deviendrait le moine officiel de la cour. L’enfant arriva, mais le seigneur ne respecta pas sa partie du contrat. Le moine mourut dans la pauvreté et le déshonneur.",
+    "image2": "imgdetail/kaifukibo/kaifukibo.jpg",
+    "image3": "imgdetail/kaifukibo/zoom1.jpg",
+    "image4": "imgdetail/kaifukibo/zoom2.jpg",
+    "image5": "imgdetail/kaifukibo/zoom3.jpg",
+    "image6": "imgdetail/kaifukibo/zoom4.jpg",
+    "image7": "imgdetail/kaifukibo/zoom5.jpg",
+    "image8": "imgdetail/kaifukibo/zoom6.jpg",
+    "image9": "imgdetail/kaifukibo/zoom7.jpg",
+    "image10": "imgdetail/kaifukibo/zoom8.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 11,
+    "nom": "Kiku Impression",
+    "prix": "25€",
+    "description":"",
+    "image2": "imgdetail/kikku/impression/kikkuip.jpg",
+    "image3": "imgdetail/kikku/impression/zoom1.jpg",
+    "image4": "imgdetail/kikku/impression/zoom2.jpg",
+    "image5": "imgdetail/kikku/impression/zoom3.jpg",
+    "image6": "imgdetail/kikku/impression/zoom4.jpg",
+    "image7": "imgdetail/kikku/impression/zoom5.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+
+  },
+
+  {
+    "id": 12,
+    "nom": "Kiku Original",
+    "prix": "90€",
+    "description":"",
+    "image2": "imgdetail/kikku/original/kikkuog.jpg",
+    "image3": "imgdetail/kikku/original/zoom1.jpg",
+    "image4": "imgdetail/kikku/original/zoom2.jpg",
+    "image5": "imgdetail/kikku/original/zoom3.jpg",
+    "image6": "imgdetail/kikku/original/zoom4.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 13,
+    "nom": "Aigrette et Corbeau",
+    "prix": "10€",
+    "description":"",
+    "image2": "imgdetail/aigrette/aigrette.jpg",
+    "image3": "imgdetail/aigrette/zoom1.jpg",
+    "image4": "imgdetail/aigrette/zoom2.jpg",
+    "image5": "imgdetail/aigrette/zoom3.jpg",
+    "soustitre" : "Dans la même collection",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 14,
+    "nom": "La Rencontre avec le Kirin",
+    "prix": "45€",
+    "description":"Kirin est un animal entre le cerf et le dragon. Il est un symbole d'harmonie, roi des animaux à pelage et il est signe de chance. Son pas est majestueux et il fait toujours attention à ne jamais écraser des plantes.",
+    "image2": "imgdetail/kirin/kirin.jpg",
+    "image3": "imgdetail/kirin/zoom1.jpg",
+    "image4": "imgdetail/kirin/zoom2.jpg",
+    "image5": "imgdetail/kirin/zoom3.jpg",
+    "image6": "imgdetail/kirin/zoom4.jpg",
+    "image7": "imgdetail/kirin/zoom5.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 15,
+    "nom": "L'Intimité de Tamamo-no-Mae",
+    "prix": "220€",
+    "description":"Elle fait partie des 3 Grandes calamités du Japon. On dit qu'elle fut responsable de la mort d'un empereur, cette soif de pouvoir fut démasquée. Elle révéla sa véritable nature de Kyubi no Kitsune (un démon renard à 9 queues).",
+    "image2": "imgdetail/tamamo/ip/tamanoip.jpg",
+    "image3": "imgdetail/tamamo/ip/zoom1.jpg",
+    "image4": "imgdetail/tamamo/ip/zoom2.jpg",
+    "image5": "imgdetail/tamamo/ip/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 16,
+    "nom": "L'Intimité de Tamamo-no-Mae",
+    "prix": "35€",
+    "description":"Elle fait partie des 3 Grandes calamités du Japon. On dit qu'elle fut responsable de la mort d'un empereur, cette soif de pouvoir fut démasquée. Elle révéla sa véritable nature de Kyubi no Kitsune (un démon renard à 9 queues).",
+    "image2": "imgdetail/tamamo/og/tamanoog.jpg",
+    "image3": "imgdetail/tamamo/og/zoom1.jpg",
+    "image4": "imgdetail/tamamo/og/zoom2.jpg",
+    "image5": "imgdetail/tamamo/og/zoom3.jpg",
+    "image6": "imgdetail/tamamo/og/zoom4.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 17,
+    "nom": "Balade d'Ayakashi",
+    "prix": "90€",
+    "description":"L’Ayakashi est une créature du folklore japonais qui provien des marins mort en pleinne mer. Lorsqu’il vous attaque le seule moyen de l’apaiser est de jeter des cendres a la mers. Il a pour maitre Ryujin le kami (dieux) de la mer.",
+    "image2": "imgdetail/ayakashi/ip/ayakashi.jpg",
+    "image3": "imgdetail/ayakashi/ip/zoom1.jpg",
+    "image4": "imgdetail/ayakashi/ip/zoom2.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 18,
+    "nom": "La Balade d'Ayakashi",
+    "prix": "25€",
+    "description":"L’Ayakashi est une créature du folklore japonais qui provien des marins mort en pleinne mer. Lorsqu’il vous attaque le seule moyen de l’apaiser est de jeter des cendres a la mers. Il a pour maitre Ryujin le kami (dieux) de la mer.",
+    "image2": "imgdetail/ayakashi/og/ayakashi.jpg",
+    "image3": "imgdetail/ayakashi/og/zoom1.jpg",
+    "image4": "imgdetail/ayakashi/og/zoom2.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 19,
+    "nom": "Bousier Cerf Volant",
+    "prix": "45€",
+    "description":"",
+    "image2": "imgdetail/bousier/volant/volant.jpg",
+    "image3": "imgdetail/bousier/volant/zoom1.jpg",
+    "image4": "imgdetail/bousier/volant/zoom2.jpg",
+    "image5": "imgdetail/bousier/volant/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+   {
+    "id": 20,
+    "nom": "Bousier Cerf Volant couleur",
+    "prix": "45€",
+    "description":"",
+    "image2": "imgdetail/bousier/cerfvolantcouleur/volantc.jpg",
+    "image3": "imgdetail/bousier/cerfvolantcouleur/zoom1.jpg",
+    "image4": "imgdetail/bousier/cerfvolantcouleur/zoom2.jpg",
+    "image5": "imgdetail/bousier/cerfvolantcouleur/zoom3.jpg",
+    "image6": "imgdetail/bousier/cerfvolantcouleur/zoom4.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 21,
+    "nom": "Bousier Cerf Volant couleur original",
+    "prix": "180€",
+    "description":"",
+    "image3": "imgdetail/bousier/volantcog/zoom1.jpg",
+    "image4": "imgdetail/bousier/volantcog/zoom2.jpg",
+    "image5": "imgdetail/bousier/volantcog/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 22,
+    "nom": "Bousier Rhinocéros impression",
+    "prix": "45€",
+    "description":"",
+    "image2": "imgdetail/bousier/rhinoip/rhino.jpg",
+    "image3": "imgdetail/bousier/rhinoip/zoom1.jpg",
+    "image4": "imgdetail/bousier/rhinoip/zoom2.jpg",
+    "image5": "imgdetail/bousier/rhinoip/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 23,
+    "nom": "Bousier Rhinocéros Original",
+    "prix": "180€",
+    "description":"",
+    "image2": "imgdetail/bousier/rhinoog/rhino.jpg",
+    "image3": "imgdetail/bousier/rhinoog/zoom1.jpg",
+    "image4": "imgdetail/bousier/rhinoog/zoom2.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 24,
+    "nom": "Bousier Rhinocéros Couleur",
+    "prix": "45€",
+    "description":"",
+    "image2": "imgdetail/bousier/rhinoc/rhino.jpg",
+    "image3": "imgdetail/bousier/rhinoc/zoom1.jpg",
+    "image4": "imgdetail/bousier/rhinoc/zoom2.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 25,
+    "nom": "Carrasius A4 Impression",
+    "prix": "25€",
+    "description":"",
+    "image2": "imgdetail/carrasiuscouleur/carrasius.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+
+  {
+    "id": 27,
+    "nom": "Carrasius A6",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/carrasius/A6/carrasiusog.jpg",
+    "image3": "imgdetail/carrasius/A6/zoom1.jpg",
+    "image4": "imgdetail/carrasius/A6/zoom2.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A6",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 28,
+    "nom": "Ryukin",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/ryukin/ryukin.jpg",
+    "image3": "imgdetail/ryukin/zoom1.jpg",
+    "image4": "imgdetail/ryukin/zoom2.jpg",
+    "image5": "imgdetail/ryukin/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 29,
+    "nom": "Ryukin Couleur Impression",
+    "prix": "85€",
+    "description":"",
+    "image2": "imgdetail/ryukin/ryukincip.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+
+  {
+    "id": 31,
+    "nom": "Tamasaba",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/ryukin/tamasaba.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+   {
+    "id": 32,
+    "nom": "Telescope Impression",
+    "prix": "45€",
+    "description":"",
+    "image2": "imgdetail/telescope/telescope.jpg",
+    "image3": "imgdetail/telescope/zoom1.jpg",
+    "image4": "imgdetail/telescope/zoom2.jpg",
+    "image5": "imgdetail/telescope/zoom3.jpg",
+    "image6": "imgdetail/telescope/zoom4.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 33,
+    "nom": "Telescope Original",
+    "prix": "180€",
+    "description":"",
+    "image2": "imgdetail/telescope/og/telescope.jpg",
+    "image3": "imgdetail/telescope/og/zoom1.jpg",
+    "image4": "imgdetail/telescope/og/zoom2.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 34,
+    "nom": "Telescope Couleur Impression",
+    "prix": "45€",
+    "description":"",
+    "image2": "imgdetail/telescope/couleurip/telescope.jpg",
+    "image3": "imgdetail/telescope/couleurip/zoom1.jpg",
+    "image4": "imgdetail/telescope/couleurip/zoom2.jpg",
+    "image5": "imgdetail/telescope/couleurip/zoom3.jpg",
+    "image6": "imgdetail/telescope/couleurip/zoom4.jpg",
+    "image7": "imgdetail/telescope/couleurip/zoom5.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+   {
+    "id": 35,
+    "nom": "Telescope Couleur Original",
+    "prix": "180€",
+    "description":"",
+    "image2": "imgdetail/telescope/couleurog/telescope.jpg",
+    "image3": "imgdetail/telescope/couleurog/zoom1.jpg",
+    "image4": "imgdetail/telescope/couleurog/zoom2.jpg",
+    "image5": "imgdetail/telescope/couleurog/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 36,
+    "nom": "Veiltail",
+    "prix": "45€",
+    "description":"",
+    "image2": "imgdetail/veiltail/veiltail.jpg",
+    "image3": "imgdetail/veiltail/zoom1.jpg",
+    "image4": "imgdetail/veiltail/zoom2.jpg",
+    "image5": "imgdetail/veiltail/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 37,
+    "nom": "Camélia Impression",
+    "prix": "45€",
+    "description":"",
+    "image2": "imgdetail/camelia/ip/camelia.jpg",
+    "image3": "imgdetail/camelia/ip/zoom1.jpg",
+    "image4": "imgdetail/camelia/ip/zoom2.jpg",
+    "image5": "imgdetail/camelia/ip/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+   {
+    "id": 38,
+    "nom": "Camélia Original",
+    "prix": "180€",
+    "description":"",
+    "image2": "imgdetail/camelia/og/camelia.jpg",
+    "image3": "imgdetail/camelia/og/zoom1.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+  {
+    "id": 39,
+    "nom": "Coquelicot",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/coquelicot/coquelicot.jpg",
+    "image3": "imgdetail/coquelicot/zoom1.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 40,
+    "nom": "Fleur Tentacule",
+    "prix": "25€",
+    "description":"",
+    "image2": "imgdetail/tentacule/tentacule.jpg",
+    "image3": "imgdetail/tentacule/zoom1.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 41,
+    "nom": "Iris",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/iris/iris.jpg",
+    "image3": "imgdetail/iris/zoom1.jpg",
+    "image4": "imgdetail/iris/zoom2.jpg",
+    "image5": "imgdetail/iris/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+   {
+    "id": 42,
+    "nom": "Orchidée",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/orchide/og/orchide.jpg",
+    "image3": "imgdetail/orchide/og/zoom1.jpg",
+    "image4": "imgdetail/orchide/og/zoom2.jpg",
+    "image5": "imgdetail/orchide/og/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 43,
+    "nom": "Orchidée Blanche",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/orchide/blanche/blanche.jpg",
+    "image3": "imgdetail/orchide/blanche/zoom1.jpg",
+    "image4": "imgdetail/orchide/blanche/zoom2.jpg",
+    "image5": "imgdetail/orchide/blanche/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 45,
+    "nom": "Orchidée Violette Impression",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/orchide/violette/violetteip.jpg",
+    "image3": "imgdetail/orchide/violette/zoom1.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 46,
+    "nom": "Geais bleu",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/geaie/geais.jpg",
+    "image3": "imgdetail/geaie/zoom1.jpg",
+    "image4": "imgdetail/geaie/zoom2.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  
+
+  {
+    "id": 47,
+    "nom": "Violette",
+    "prix": "25€",
+    "description":"",
+    "image2": "imgdetail/violette/violette.jpg",
+    "image3": "imgdetail/violette/zoom2.jpg",
+    "image4": "imgdetail/violette/zoom3.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+  {
+    "id": 48,
+    "nom": "Fleur Soleil",
+    "prix": "8€",
+    "description":"",
+    "image2": "imgdetail/soleil/soleil.jpg",
+    "image3": "imgdetail/violette/zoom1.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  },
+
+   {
+    "id": 49,
+    "nom": "Orchidé",
+    "prix": "50€",
+    "description":"",
+    "image2": "imgdetail/orchide/orchide.jpg",
+    "image3": "imgdetail/orchide/zoom1.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Original"
+  },
+
+   {
+    "id": 50,
+    "nom": "La Rencontre avec le Kirin",
+    "prix": "260€",
+    "description":"Kirin est un animal entre le cerf et le dragon. Il est un symbole d'harmonie, roi des animaux à pelage et il est signe de chance. Son pas est majestueux et il fait toujours attention à ne jamais écraser des plantes.",
+    "image2": "imgdetail/kirin/og/kirin.jpg",
+    "image3": "imgdetail/kirin/og/zoom1.jpg",
+    "image4": "imgdetail/kirin/og/zoom2.jpg",
+    "image5": "imgdetail/kirin/og/zoom3.jpg",
+    "image6": "imgdetail/kirin/og/zoom4.jpg",
+    "image7": "imgdetail/kirin/og/zoom5.jpg",
+    "technique": "Feutre de précision, de couleur et aquarelle ",
+    "format": "  A3",
+    "nature": "Impression"
+  }
+
+
+
+
+
+
+]   

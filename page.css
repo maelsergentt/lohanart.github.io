@@ -1,0 +1,856 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #0a0a0a;
+	font-family: Arial, Helvetica, sans-serif;
+    margin-top: 9vh;
+}
+
+h1{
+	font-family: "Protest Revolution", sans-serif;
+	color: aliceblue;
+}
+
+/* Bouton header */
+
+/* Style du bouton */
+.menu-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+/* Style des lignes du burger */
+.menu-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.burger-line {
+    fill: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+
+.menu-button.active .burger-line.top {
+    transform: rotate(45deg) translate(13px, 13px);
+}
+
+.menu-button.active .burger-line.middle {
+    opacity: 0;
+}
+
+.menu-button.active .burger-line.bottom {
+    transform: rotate(-45deg) translate(13px, -13px);
+}
+
+
+nav a.active {
+  color: red;
+}
+
+
+h2{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-family: "Protest Revolution", sans-serif;
+	color: aliceblue;
+	text-align: center;
+	font-size: 3vw;
+}
+
+
+
+.responsive-wrapper {
+	width: 100%;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* Contenu du header */
+/* Header */
+.header-outer {
+    height: var(--header-outer-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: none;
+    border-bottom: 1px solid white;
+    background-color: #0a0a0a;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+/* Conteneur interne du header */
+.header-inner {
+    background-color: #0a0a0a;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.header-logo img {
+    height: 50px;
+}
+
+/* Navigation */
+.header-navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Bouton menu burger */
+.menu-button {
+    border: 0;
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: none; /* Masqué sur desktop */
+    z-index: 1100;
+}
+
+/* Liens de navigation */
+.nav-links {
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 1.75rem;
+    position: relative;
+    font-weight: 600;
+    text-decoration: none;
+	font-family: "Protest Revolution", sans-serif;
+}
+
+/* Effet de survol des liens */
+.nav-links a:hover:after {
+    transform: scalex(1);
+}
+
+.nav-links a:after {
+    transition: 0.25s ease;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: currentcolor;
+    transform: scalex(0);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+
+/* Responsive : mobile */
+/* Responsive : mobile */
+@media (max-width: 799px) {
+    /* Bouton menu burger */
+    .menu-button {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        z-index: 1100;
+    }
+
+    /* Menu en plein écran */
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 1);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        margin: 0;
+    }
+
+    /* État ouvert du menu */
+    .nav-links.menu-open {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+         transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    /* Liens en gros et centrés */
+    .nav-links a {
+        font-size: 2rem;
+        color: white;
+        margin: 25px 0;
+        font-weight: 600;
+        text-align: center;
+      
+    }
+
+   
+  
+
+    
+
+    
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Invisible au départ */
+    transform: translateY(0px); /* Décalage initial */
+    transition:
+        opacity 0.4s ease-out,
+        transform 0.3s ease-out; /* Transition fluide pour l'apparition */
+}
+
+.gallery-item.visible {
+    opacity: 1; /* Devient visible */
+    transform: translateY(0); /* Retour à la position normale */
+}
+
+.gallery-item:hover {
+    transform: scale(1.03); /* Zoom fluide au survol */
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Easing fluide */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: inherit; /* Hérite des transitions du parent */
+}
+
+
+
+
+@media (max-width: 1045px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    }
+}
+
+/* Responsive : adaptation pour les petits écrans */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(50vw, 1fr));
+        padding: 5px;
+        padding-top: 25px;
+    }
+
+	.banner{
+	height: 500px; /* Plus haute en mobile */
+        width: 100%; /* Plus de full width, on réduit la largeur pour plus de hauteur */
+        margin: 0 auto; /* Centre la bannière */
+    }
+    
+}
+
+.banner {
+    width: 100%;
+    height: 400px; /* Hauteur par défaut sur desktop */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	z-index: 0;
+	margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les paddings */
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	 object-position: center; /* Centre l'image pour éviter les bords */
+}
+
+
+/* FOOTER ZONE  */
+
+.logofooter{
+    width: 5vw;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: white; /* Couleur de la ligne */
+    opacity: 0.3; /* Légère transparence pour un effet subtil */
+	margin-bottom: 50px;
+}
+
+.footer-basic {
+  padding:0px 0;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+}
+
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:8vh;
+}
+
+.footer-basic .copyright a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.logoinsta{
+	width: 2vw;
+    margin: 10px;
+}
+
+
+
+
+
+/* BOUTON FLOTTANT */
+
+.floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: radial-gradient(#e66465, #9198e5);
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+}
+
+.arrow{
+	width: 7vw;
+}
+
+
+/* product zone */
+
+/* Style général */
+.product-page {
+    display: flex;
+    min-height: 100vh;
+    color: white;
+    position: relative;
+    margin-top : 0;
+    align-items: center;
+}
+
+/* Conteneur des images (défilement vertical sur desktop) */
+.product-images {
+    flex: 1;
+    overflow-y: auto; /* Défilement vertical */
+    height: 100vh; /* Pleine hauteur */
+    position: relative;
+}
+
+.product-images::-webkit-scrollbar {
+    display: none; /* Masquer la barre de défilement */
+}
+
+.product-images {
+    -ms-overflow-style: none;  /* IE et Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    object-fit: cover;
+}
+
+.product-images img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    margin: 5px auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Conteneur du texte (fixe sur desktop) */
+.product-info {
+    flex: 1;
+    padding: 20px;
+    padding-left: 5rem;
+    position: sticky;
+    top: 0;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.product-price {
+    font-size: 1.4rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.product-button {
+    background-color: #7b2d26;
+    color: white;
+    border: 1px solid #ffffff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    font-family: "Protest Revolution", sans-serif;
+    transition: transform 0.3s ease;
+    
+}
+
+.product-button:hover{
+    transform: translate(5px, -5px);
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+}
+
+
+
+.product-details {
+    margin-top: auto;
+}
+
+.product-details h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.product-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-details li {
+    margin-bottom: 8px;
+}
+
+/* Boutons de navigation */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    display: none; /* Masqué par défaut sur desktop */
+}
+
+.nav-button.prev {
+    left: 10px;
+}
+
+.nav-button.next {
+    right: 10px;
+}
+
+.original{
+     display: flex;
+    overflow-x: auto; /* Défilement vertical */
+    position: relative;
+    -ms-overflow-style: none;  /* IE et Edge */
+    scrollbar-width: none;  /* Firefox */
+    gap: 10px;
+    width: 100%;
+}
+
+.original::-webkit-scrollbar {
+    display: none; /* Masquer la barre de défilement */
+}
+
+.image-original{
+    max-width: 33%;
+}
+
+.image-original img{
+    width: 100%;
+}
+
+.lisere{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    opacity: 50%;
+}
+
+
+/* Responsive : Mobile */
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+        align-items: normal;
+    }
+
+    .product-images {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        
+
+    }
+
+   
+
+    .image-container {
+        flex: 0 0 100vw;
+        width: 80vw;
+        height: auto;
+        scroll-snap-align: start;
+        margin-right: 10px;
+    }
+
+    .product-images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .product-info {
+        position: relative;
+        height: auto;
+        padding: 20px;
+    }
+
+    .product-button {
+    background-color: #7b2d26;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.original{
+     display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+}
+
+.image-original{
+    max-width: 100%;
+}
+
+.image-original img{
+    width: 80vw;
+}
+
+
+
+
+
+    .nav-button {
+        display: block; /* Afficher les boutons sur mobile */
+    }
+
+    .logoinsta{
+	width: 6vw;
+    }
+
+  
+
+    .arrow{
+        width: 15vw;
+    }
+
+    .logofooter{
+        width: 9vw;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .floating-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+}
+
+.image-container::-webkit-scrollbar {
+    display: none; /* Masquer la barre de défilement sur mobile */
+}
+
+
+/* À propos */ 
+.contentpropos{
+    text-align: center;
+    padding-top: 100px;
+    color: aliceblue;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 130%;
+    padding-bottom: 50px;
+    opacity: 0; /* Texte invisible au départ */
+    transform: translateY(20px); /* Décalage vers le bas */
+    animation: fadeIn 1s ease-out forwards; /* Animation appliquée */
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Texte devient visible */
+    transform: translateY(0); /* Retour à la position normale */
+  }
+}
+
+@media (max-width: 768px) {
+    .contentpropos{
+    text-align: center;
+    margin-top: 100px;
+    color: aliceblue;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 130%;
+    }
+
+    .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    }
+
+
+}
+
+/* formulaire*/ 
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #191919;
+  color: aliceblue;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #0d0d0d;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #9a692d;
+  border: none;
+}
+
+#form-response {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.iconelogo{
+    width: 20%;
+}
+
+.divbullet{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.bullet{
+    width: 3vw;
+    background-color: #7b2d26;
+    color: aliceblue;
+    border-radius: 50px;
+    height: 5vh;
+    stroke: 1px;
+    border: 1px solid white;
+    margin-bottom: 5vh;
+    transition: transform 0.3s ease;
+    font-family: "Protest Revolution", sans-serif;
+}
+
+.bullet:hover{
+    transform: translate(5px, -5px);
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
+}
+
+@media (max-width: 768px) {
+    
+.bullet{
+    width: 8vw;
+}
+
+
+}
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="page.css">
+  
+</head>
+<body>
+
+  <header class="header-outer">
+
+    <div class="header-inner responsive-wrapper">
+      <div class="header-logo">
+        <a href="index.html"><img src="logosvg blanc.svg" /></a>
+      </div>
+      <nav class="header-navigation">
+            <button class="menu-button">
+              <svg class="burger-icon" viewBox="0 0 100 80" width="30" height="30">
+                  <rect class="burger-line top" width="100" height="10" rx="5"></rect>
+                  <rect class="burger-line middle" y="30" width="100" height="10" rx="5"></rect>
+                  <rect class="burger-line bottom" y="60" width="100" height="10" rx="5"></rect>
+              </svg>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="estampes.html">Estampes</a>
+                <a href="poisson.html">Ryukin</a>
+                <a href="bousier.html">Bousier</a>
+                <a href="fleurs.html">Fleurs</a>
+                <a href="propos.html">À propos</a>
+            </div>
+      </nav>
+    </div>
+    
+  </header>
+
+ <div class="contentpropos">
+
+    <h1>Mentions légales</h1>
+    <br>
+    <br>
+
+    <h3>Licence d’accès au site</h3>
+    <p>
+      Ce site vous accorde une licence limitée à l’accès et à l’utilisation du site pour votre utilisation personnelle. En aucun cas vous n’êtes autorisé à télécharger ou à modifier tout ou partie de ce site sans autorisation écrite et expresse. Cette licence ne vous permet en aucun cas d’utiliser, pour la vente ou pour toute autre utilisation commerciale ce site ou son contenu. Ce site ou toute partie de ce site ne doit en aucun cas être reproduit, copié, vendu ou exploité pour des raisons commerciales sans autorisation expresse et écrite. Vous ne devez pas utiliser des techniques permettant de copier une illustration, une peinture ou toute autre information (notamment images, texte) dont je suis propriétaire sans accord express et écrit. Vous ne devez pas utiliser les meta tags ou tout autre texte « caché » contenant mon nom sans accord express et écrit. Toute utilisation non autorisée mettra fin à la licence que je vous ai accordée. Ce site autorise, à titre non exclusif et révocable, à créer un lien hypertexte pointant sur la page d’accueil ou autre page du portfolio à la condition que ce lien ne puisse créer, un caractère mensonger, faux, péjoratif ou pouvant porter préjudice. En aucun cas la création de ce lien hypertexte ne pourra engager ma responsabilité, à quelque titre que ce soit, sur le contenu du site. Toute utilisation dans votre lien de mes créations nécessite une autorisation expresse et écrite. 
+    </p>
+    <h3>Commentaires, communications</h3>
+    <p>Les utilisateurs de ce site peuvent adresser des commentaires ou tout autre contenu ; Soumettre des suggestions, des idées, des questions ou toute autre information tant que ce contenu n’est pas illégal, obscène, abusif, menaçant, diffamatoire, calomnieux, contrevenant aux droits de propriété intellectuelle, ou préjudiciable à des tiers et ne consiste pas ou ne contient pas de virus informatiques, de militantisme politique, de sollicitations commerciales, de mailing de masse, de chaînes ou toute autre forme de « spam ». Vous ne devez pas utiliser une fausse adresse e-mail, usurper l’identité d’une personne ou d’une entité, ni mentir sur l’origine du contenu. Je me réserve le droit, à mon entière discrétion, d’enlever ou de modifier tout contenu, notamment pour des raisons techniques (capacité de stockage insuffisante, virus, clarté de la page web) ou légales (propos à caractère diffamatoire, mensonger, raciste, obscène ou faisant l’apologie des crimes contre l’humanité). Les raisons ci-dessus mentionnées le sont à titre d’exemple et ne doivent pas être interprétées comme étant exhaustives.</p>
+    <h3>Données personnelles</h3>
+    <p>
+      Les informations qui vous sont demandées sur le formulaire de contact ou sur le formulaire de commentaires sont, pour certaines signalées comme telles, nécessaires pour traiter vos demandes de contact, et pour d’autres, utiles pour filtrer les spams. Ces données demeurent à l’usage interne de Collard Loan. 
+    </p>
+    <h3>Dispositions Informatiques et Libertés</h3>
+    <p>
+      Le traitement de vos données personnelles se fait dans le respect de la loi relative à l’Informatique, aux fichiers et aux Libertés du 6 janvier 1978. Vous disposez à tout moment, d’un droit d’accès et de rectification ou d’opposition aux données personnelles vous concernant. Vous pouvez en faire la demande par le formulaire de contact. Si vous pensez qu’un contenu figurant sur le site est susceptible d’enfreindre l’un de vos droits de propriété intellectuelle, vous pouvez me contacter par le formulaire de contact. 
+    </p>
+  </div>
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuButton.addEventListener('click', function() {
+            navLinks.classList.toggle('menu-open');
+        });
+    });
+    
+    document.getElementById('form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const responseDiv = document.getElementById('form-response');
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      responseDiv.textContent = 'Merci ! Votre message a été envoyé.';
+      responseDiv.style.color = '#4CAF50';
+      form.reset();
+    } else {
+      responseDiv.textContent = 'Une erreur est survenue. Veuillez réessayer.';
+      responseDiv.style.color = '#f44336';
+    }
+  })
+  .catch(error => {
+    responseDiv.textContent = 'Une erreur est survenue. Veuillez réessayer.';
+    responseDiv.style.color = '#f44336';
+  });
+});
+    
+  // Récupère l'URL de la page actuelle
+const currentPage = window.location.pathname.split("/").pop();
+
+// Sélectionne tous les liens du menu
+const navLinks = document.querySelectorAll('nav a');
+
+// Pour chaque lien, vérifie s'il correspond à la page actuelle
+navLinks.forEach(link => {
+  const linkPage = link.getAttribute('href');
+  if (currentPage === linkPage) {
+    link.classList.add('active');
+  }
+});
+
+ 
+   
+
+</script>
+
+
+  <div class="footer-basic">
+     <hr class="footer-divider">
+        <footer>
+                <div class="logofooter">
+                    <img  src="logo.svg" alt=""> 
+                </div>
+                 <div class="social">
+                    <a href="https://www.instagram.com/lohaaaaaaan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="icon-social-instagram"><img class="logoinsta"  src="insta.svg" alt=""></i></a>
+                    <a href="https://www.tiktok.com/@lohan3303?_t=ZN-90tbROeY55S&_r=1"><i class="icon-social-instagram"><img class="logoinsta"  src="tiktok.svg" alt=""></i></a>
+                </div>
+                <div class="copyright">
+                    <a href="mentionslegales.html"><p >Mentions Légales</p></a>    
+                    <p >Lohan Illustrateur | Tous droits réservés</p>
+                </div>
+           
+        </footer>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

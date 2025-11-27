@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="page.css">
+  
+</head>
+<body>
+
+  <header class="header-outer">
+
+    <div class="header-inner responsive-wrapper">
+      <div class="header-logo">
+        <a href="index.html"><img src="logosvg blanc.svg" /></a>
+      </div>
+      <nav class="header-navigation">
+            <button class="menu-button">
+              <svg class="burger-icon" viewBox="0 0 100 80" width="30" height="30">
+                  <rect class="burger-line top" width="100" height="10" rx="5"></rect>
+                  <rect class="burger-line middle" y="30" width="100" height="10" rx="5"></rect>
+                  <rect class="burger-line bottom" y="60" width="100" height="10" rx="5"></rect>
+              </svg>
+            </button>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Illustrations</a>
+                <a href="#">À propos</a>
+            </div>
+      </nav>
+    </div>
+
+  </header>
+
+
+ <div class="product-page">
+    <!-- Conteneur pour les images (défilement vertical sur desktop) -->
+    <div class="product-images">
+        <div class="image-container">
+            <img src="/produits/akkorokamui.jpg" alt="Le Courroux d'Akkorokamui">
+             <img src="/produits/akkorokamui.jpg" alt="Le Courroux d'Akkorokamui">
+              <img src="/produits/akkorokamui.jpg" alt="Le Courroux d'Akkorokamui">
+            <!-- Ajoute d'autres images si nécessaire -->
+        </div>
+        <!-- Boutons de navigation (visibles uniquement sur mobile) -->
+        <button class="nav-button prev" id="prevImage">←</button>
+        <button class="nav-button next" id="nextImage">→</button>
+    </div>
+
+    <!-- Conteneur pour le texte (fixe sur desktop) -->
+    <div class="product-info">
+        <h1>Le Courroux d'Akkorokamui</h1>
+        <div class="product-price">49,99 €</div>
+        <div class="product-description">
+            <p>Cette créature vit dans le nord du Japon. Elle terrifie les pêcheurs et engloutit les navires qui l'approchent de trop près. On raconte qu'il protège les régions du nord. L'Akkorokamui proviens du folklore Ainu ou il serait un kami (dieux) de l'eau.</p>
+        </div>
+        <button class="product-button">contacter</button>
+        <div class="product-details">
+            <h3>Détails de l'Illustration</h3>
+            <ul>
+                <li>Technique: digital</li>
+                <li>Impression A4</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('.menu-button');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuButton.addEventListener('click', function() {
+                navLinks.classList.toggle('menu-open');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const imageContainer = document.querySelector('.image-container');
+    const prevButton = document.getElementById('prevImage');
+    const nextButton = document.getElementById('nextImage');
+    const images = document.querySelectorAll('.product-images img');
+    let currentIndex = 0;
+
+    // Fonction pour naviguer entre les images
+    function scrollToImage(index) {
+        if (window.innerWidth <= 768) {
+            // Mobile : défilement horizontal
+            imageContainer.scrollTo({
+                left: imageContainer.clientWidth * index,
+                behavior: 'smooth'
+            });
+        }
+        currentIndex = index;
+    }
+
+    // Bouton précédent
+    prevButton.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            scrollToImage(currentIndex - 1);
+        }
+    });
+
+    // Bouton suivant
+    nextButton.addEventListener('click', function() {
+        if (currentIndex < images.length - 1) {
+            scrollToImage(currentIndex + 1);
+        }
+    });
+
+    // Défilement tactile sur mobile
+    if (window.innerWidth <= 768) {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        imageContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - imageContainer.offsetLeft;
+            scrollLeft = imageContainer.scrollLeft;
+        });
+
+        imageContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+        });
+
+        imageContainer.addEventListener('mouseup', () => {
+            isDown = false;
+        });
+
+        imageContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - imageContainer.offsetLeft;
+            const walk = (x - startX) * 2;
+            imageContainer.scrollLeft = scrollLeft - walk;
+        });
+    }
+});
+
+    </script>
+
+    <div class="footer-basic">
+        <hr class="footer-divider">
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/lohaaaaaaan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="icon-social-instagram"><img class="logoinsta"  src="insta.svg" alt=""></i></a>
+            </div>
+           <div class="copyright">
+                    <a href="mentionslegales.html"><p >Mentions Légales</p></a>    
+                    <p >Lohan Illustrateur | Tous droits réservés</p>
+           </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,46 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 15px;
+    padding: 0px;
+	margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+     opacity: 0;    
+}
+
+
+@media (max-width: 1045px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    }
+}
+
+/* Responsive : adaptation pour les petits écrans */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    }
+
+	.banner{
+	height: 500px; /* Plus haute en mobile */
+        width: 100%; /* Plus de full width, on réduit la largeur pour plus de hauteur */
+        margin: 0 auto; /* Centre la bannière */
+    }
+}
