@@ -53,35 +53,23 @@ précision et j'y applique une colorisation numérique souvent dans une
 ambiance colorée différente.</p>
   </div>
 
-<div class="contact-form">
   <h2>Contactez-moi</h2>
-  <form id="form" action="#" method="POST">
-    <div class="form-group">
-      <label for="email">Adresse e-mail :</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Votre adresse e-mail"
-        required
-      >
-    </div>
-    <div class="form-group">
-      <label for="message">Message :</label>
-      <textarea
-        id="message"
-        name="message"
-        placeholder="Votre message..."
-        rows="5"
-        required
-      ></textarea>
-    </div>
-    <button type="submit" class="submit-btn">Envoyer</button>
-  </form>
-  <div id="form-response"></div>
-</div>
-
-<form id="form" action="https://formspree.io/f/mdkqwyrg" method="POST">
+<form
+  action="https://formspree.io/f/mdkqwyrg"
+  method="POST"
+  class="form-group"
+>
+  <label>
+    Your email:
+    <input type="email" name="email" placeholder="Votre adresse mail">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message" placeholder="Votre message ..."></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button class="submit-btn" type="submit">Send</button>
+</form>
 
 <script>
 
@@ -170,5 +158,6 @@ navLinks.forEach(link => {
 </body>
 
 </html>
+
 
 
