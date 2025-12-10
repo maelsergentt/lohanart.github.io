@@ -765,7 +765,10 @@ h2{
 }
 
 .form-group {
-  margin-bottom: 20px;
+  padding-bottom: 100px;
+  width: 50vw;
+  margin: 0 auto;
+
 }
 
 .form-group label {
@@ -782,16 +785,19 @@ h2{
   font-size: 16px;
   background-color: #191919;
   color: aliceblue;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .form-group textarea {
   resize: vertical;
+  min-height: 100px;
 }
 
 .submit-btn {
-  background-color: #0d0d0d;
-  color: white;
-  border: 1px solid white;
+  background-color: #7b2d26;
+    color: white;
+    border: 1px solid #ffffff;
   padding: 12px 20px;
   cursor: pointer;
   font-size: 16px;
@@ -799,18 +805,20 @@ h2{
   width: 100%;
   margin: 0 auto;
   transition: background-color 0.3s;
+  border-radius: 50px;
+   font-family: "Protest Revolution", sans-serif;
+    transition: transform 0.3s ease;
+    
 }
+
+
 
 .submit-btn:hover {
-  background-color: #9a692d;
-  border: none;
-}
-
-#form-response {
-  margin-top: 20px;
-  text-align: center;
-  font-weight: bold;
-  color: #4CAF50;
+   transform: translate(5px, -5px);
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-top: none;
+    border-right: none;
 }
 
 .iconelogo{
@@ -850,9 +858,23 @@ h2{
 .bullet{
     width: 8vw;
 }
+	.bullet{
+    width: 8vw;
+}
+
+.form-group {
+  padding-bottom: 100px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+h2 {
+    font-size: 3em;
+}
 
 
 }
+
 
 
 
